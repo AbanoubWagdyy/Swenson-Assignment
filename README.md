@@ -1,6 +1,7 @@
 # Swenson-Assignment
 
 I.
+
 ((3+1)/3)*9 = 12
 
 -------------------------------------------------------------------------------------------------------
@@ -8,8 +9,7 @@ I.
 II.
 
 fun isAnagram(str1: String, str2: String): Boolean {
-
-    val charactersMap = HashMap<Char, Int>()
+ val charactersMap = HashMap<Char, Int>()
     for (ch in str1.toCharArray())
         if (charactersMap.containsKey(ch))
             charactersMap[ch] = charactersMap[ch]!! + 1
