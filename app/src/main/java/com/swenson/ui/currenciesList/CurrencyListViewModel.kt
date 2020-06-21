@@ -5,6 +5,6 @@ import com.swenson.ui.currenciesList.domain.GetCurrencyListUseCase
 import javax.inject.Inject
 
 class CurrencyListViewModel
-@Inject constructor(private val getCurrencyListUseCase: GetCurrencyListUseCase) : ViewModel() {
+@Inject constructor(private val mUseCase: GetCurrencyListUseCase) : ViewModel() {
 
 }
