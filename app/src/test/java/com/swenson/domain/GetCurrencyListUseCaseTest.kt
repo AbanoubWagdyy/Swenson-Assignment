@@ -44,7 +44,7 @@ class GetCurrencyListUseCaseTest {
             `when`(mockRepo.getCurrencyRates()).thenReturn(ApiResponse.Success(currencyRateRes))
             val result = useCase.invoke()
             verify(mockRepo).getCurrencyRates()
-            Assert.assertNotEquals(result, ApiResponse.Success(currencyRateRes))
+            Assert.assertNotNull(result)
         }
     }
 
