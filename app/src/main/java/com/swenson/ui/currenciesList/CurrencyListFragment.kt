@@ -1,6 +1,5 @@
 package com.swenson.ui.currenciesList
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,10 +11,6 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class CurrencyListFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = CurrencyListFragment()
-    }
 
     @Inject
     lateinit var viewModel : CurrencyListViewModel

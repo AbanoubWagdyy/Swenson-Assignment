@@ -6,4 +6,5 @@ import javax.inject.Inject
 
 class CurrencyListViewModel
 @Inject constructor(private val getCurrencyListUseCase: GetCurrencyListUseCase) : ViewModel() {
+
 }
