@@ -1,5 +1,6 @@
 package com.swenson.data.repository
 
+import androidx.annotation.VisibleForTesting
 import com.swenson.data.entities.CurrencyResponse
 import com.swenson.data.remote.ApiResponse
 import com.swenson.data.remote.ServiceApi
@@ -12,6 +13,7 @@ class CurrencyRepositoryImp @Inject constructor(
     private val apiServiceApi: ServiceApi
 ) : CurrencyRepository {
 
+    private var symbolText: String? = null
     private var currencyRates: CurrencyResponse? = null
 
     override suspend fun getCurrencyRates(): ApiResponse<CurrencyResponse> {
@@ -38,5 +40,18 @@ class CurrencyRepositoryImp @Inject constructor(
 
     fun getCalledRates(): CurrencyResponse? {
         return currencyRates
+    }
+
+    @VisibleForTesting
+    fun setCurrencyRates(currencyRateRes: CurrencyResponse) {
+        this.currencyRates = currencyRateRes
+    }
+
+    override fun setSymbol(symbolText: String) {
+        this.symbolText = symbolText
+    }
+
+    override fun getSymbol(): String? {
+        return this.symbolText
     }
 }

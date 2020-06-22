@@ -4,6 +4,7 @@ import com.swenson.data.entities.CurrencyResponse
 import com.swenson.data.entities.Rates
 import com.swenson.data.remote.ApiResponse
 import com.swenson.data.remote.ServiceApi
+import com.swenson.data.repository.CurrencyRepository
 import com.swenson.data.repository.CurrencyRepositoryImp
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking
@@ -15,7 +16,7 @@ import retrofit2.Response.success
 
 class CurrencyRepositoryImpTest {
 
-    private lateinit var repo: CurrencyRepositoryImp
+    private lateinit var repo: CurrencyRepository
     private val mockServiceApi = mock(ServiceApi::class.java)
 
 //    private val rates = Rates(

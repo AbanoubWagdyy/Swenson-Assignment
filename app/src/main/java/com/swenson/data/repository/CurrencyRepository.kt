@@ -5,4 +5,6 @@ import com.swenson.data.remote.ApiResponse
 
 interface CurrencyRepository {
     suspend fun getCurrencyRates(): ApiResponse<CurrencyResponse>
+    fun setSymbol(symbolText: String)
+    fun getSymbol(): String?
 }

@@ -7,12 +7,16 @@
 
     <fragment
         android:id="@+id/CurrencyListFragment"
-        android:name="com.swenson.ui.currencyConverter.CurrencyConverterFragment"
-        android:label="currency_converter_fragment"
-        tools:layout="@layout/currency_converter_fragment">
+        android:name="com.swenson.ui.currenciesList.CurrencyListFragment"
+        android:label="currency_list_fragment"
+        tools:layout="@layout/currency_list_fragment">
         <action
-            android:id="@+id/action_CurrencyListFragment_to_CurrencyConverterFragment2"
-            app:destination="@id/CurrencyConverterFragment" />
+            android:id="@+id/action_CurrencyListFragment_to_CurrencyConverterFragment"
+            app:destination="@id/CurrencyConverterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/CurrencyConverterFragment"

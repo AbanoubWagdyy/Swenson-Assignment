@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SwensonAssignment</string>
+    <string name="base_currency">EUR</string>
+    <string name="base_currency_hint">Value in Euro</string>
+    <string name="eur">EUR</string>
+    <string name="converter">Converter</string>
 </resources>
