@@ -10,3 +10,15 @@ https://gist.github.com/AbanoubWagdyy/a45a9131337af49c3f9d7f144753bf90
 https://gist.github.com/AbanoubWagdyy/4ed2f90f2c061b1f884f330ab8906335
 #### Iterative approach
 https://gist.github.com/AbanoubWagdyy/14480728e80236db0479e751347738fc
+#### Task Related Architecture with used technologies : 
+-Kotlin
+-Android X
+-Clean Architecture
+-MVVM
+-Live Data
+-View Model
+-Coroutines
+-Hilt-Dagger
+-Retrofit
+-Navigation Component
+-Mockito for Unit Testing
