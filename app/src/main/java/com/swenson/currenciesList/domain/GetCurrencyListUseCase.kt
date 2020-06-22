@@ -1,4 +1,4 @@
-package com.swenson.ui.currenciesList.domain
+package com.swenson.currenciesList.domain
 
 import com.swenson.data.entities.CurrencyResponse
 import com.swenson.data.remote.ApiResponse

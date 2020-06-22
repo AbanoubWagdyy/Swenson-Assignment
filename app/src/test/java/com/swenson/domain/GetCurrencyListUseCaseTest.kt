@@ -4,7 +4,7 @@ import com.swenson.data.entities.CurrencyResponse
 import com.swenson.data.entities.Rates
 import com.swenson.data.remote.ApiResponse
 import com.swenson.data.repository.CurrencyRepositoryImp
-import com.swenson.ui.currenciesList.domain.GetCurrencyListUseCase
+import com.swenson.currenciesList.domain.GetCurrencyListUseCase
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before

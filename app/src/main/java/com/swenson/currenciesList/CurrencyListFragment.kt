@@ -1,4 +1,4 @@
-package com.swenson.ui.currenciesList
+package com.swenson.currenciesList
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
